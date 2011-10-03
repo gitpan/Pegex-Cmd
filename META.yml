@@ -1,0 +1,30 @@
+---
+abstract: ~
+author:
+  - 'Ingy döt Net <ingy@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 1.01'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+module_name: Pegex::Cmd
+name: Pegex-Cmd
+no_index:
+  directory:
+    - inc
+    - t
+    - xt
+requires:
+  Mouse: 0.93
+  MouseX::App::Cmd: 0.08
+  perl: 5.8.3
+resources:
+  homepage: http://github.com/ingydotnet/pegex-cmd-pm/tree
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/ingydotnet/pegex-cmd-pm.git
+version: 0.10
