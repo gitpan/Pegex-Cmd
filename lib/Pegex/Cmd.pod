@@ -20,7 +20,7 @@ From the command line:
 
 The C<pegex> command line tool compiles a L<Pegex> grammar into a particular
 format and prints it to STDOUT. This tool just provides a simple way to invoke
-<Pegex::Compiler> from the command line. See the C<Pegex> documentation for
+L<Pegex::Compiler> from the command line. See the L<Pegex> documentation for
 more information.
 
 =head1 SEE ALSO
@@ -47,7 +47,7 @@ Ingy döt Net <ingy@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2011. Ingy döt Net.
+Copyright (c) 2011, 2012. Ingy döt Net.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
