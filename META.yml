@@ -21,9 +21,9 @@ no_index:
     - t
     - xt
 requires:
-  Mouse: 0.99
+  Mouse: 1.02
   MouseX::App::Cmd: 0.11
-  Pegex: 0.19
+  Pegex: 0.20
   perl: 5.8.3
 resources:
   homepage: https://github.com/ingydotnet/pegex-cmd-pm/tree
@@ -32,4 +32,4 @@ resources:
     type: git
     url: git://github.com/ingydotnet/pegex-cmd-pm.git
     web: https://github.com/ingydotnet/pegex-cmd-pm/tree
-version: 0.12
+version: 0.13

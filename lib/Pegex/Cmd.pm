@@ -11,14 +11,14 @@
 
 use 5.008003;
 
-use Mouse 0.99 ();
+use Mouse 1.02 ();
 use MouseX::App::Cmd 0.11 ();
-use Pegex 0.19 ();
+use Pegex 0.20 ();
 
 #------------------------------------------------------------------------------#
 package Pegex::Cmd;
 
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 #------------------------------------------------------------------------------#
 package Pegex::Cmd::Command;
@@ -74,6 +74,13 @@ has boot => (
 my %formats = map {($_,1)} qw'yaml json perl perl6 python';
 my %regexes = map {($_,1)} qw'perl raw';
 
+sub slurp {
+    my ($file_name) = @_;
+    open INPUT, $file_name or die "Can't open $file_name for input";
+    local $/;
+    <INPUT>
+}
+
 sub execute {
     my ($self, $opt, $args) = @_;
     my $to = $self->to;
@@ -83,7 +90,7 @@ sub execute {
     die "'$regex' is an invalid --regex= format"
         unless $regexes{$regex};
     my $input = scalar(@$args)
-        ? $args->[0]
+        ? slurp($args->[0])
         : do { local $/; <> };
     my $compiler_class = $self->boot
         ? 'Pegex::Bootstrap'
@@ -91,7 +98,7 @@ sub execute {
     eval "use $compiler_class; 1" or die $@;
     my $compiler = $compiler_class->new();
     $compiler->parse($input)->combinate;
-    $compiler->perlify if $regex eq 'perl';
+    $compiler->native if $regex eq 'perl';
     my $output =
         $to eq 'perl' ? $compiler->to_perl :
         $to eq 'yaml' ? $compiler->to_yaml :
