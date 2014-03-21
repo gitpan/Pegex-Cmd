@@ -1,20 +1,15 @@
----
-version: 0.13
-date:    Thu Aug 30 00:31:16 PDT 2012
-changes:
-- Use Pegex 0.20 API
----
-version: 0.12
-date:    Sat Jul  7 14:04:55 PDT 2012
-changes:
-- Add --boot for using Pegex::Boostrap compiler
----
-version: 0.11
-date:    Sat Nov  5 01:14:39 PDT 2011
-changes:
-- Better docs for castaway++
----
-version: 0.10
-date:    Tue Oct  4 00:05:44 BST 2011
-changes:
-- First Release
+0.14 Fri Mar 21 08:23:24 PDT 2014
+ - Switch to dzil
+
+0.13 Thu Aug 30 00:31:16 PDT 2012
+ - Use Pegex 0.20 API
+
+0.12 Sat Jul  7 14:04:55 PDT 2012
+ - Add --boot for using Pegex::Boostrap compiler
+
+0.11 Sat Nov  5 01:14:39 PDT 2011
+ - Better docs for castaway++
+
+0.10 Tue Oct  4 00:05:44 BST 2011
+ - First Release
+
