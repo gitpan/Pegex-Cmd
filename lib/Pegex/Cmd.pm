@@ -1,14 +1,15 @@
 package Pegex::Cmd;
-$Pegex::Cmd::VERSION = '0.14';
+$Pegex::Cmd::VERSION = '0.15';
 #-----------------------------------------------------------------------------#
 package Pegex::Cmd::Command;
-$Pegex::Cmd::Command::VERSION = '0.14';
+$Pegex::Cmd::Command::VERSION = '0.15';
 use App::Cmd::Setup -command;
 use Mouse;
 extends 'MouseX::App::Cmd::Command';
 
 #-----------------------------------------------------------------------------#
 package Pegex::Cmd;
+
 use App::Cmd::Setup -app;
 use Mouse;
 extends 'MouseX::App::Cmd';
@@ -20,7 +21,7 @@ use Module::Pluggable
 
 #-----------------------------------------------------------------------------#
 package Pegex::Cmd::Command::compile;
-$Pegex::Cmd::Command::compile::VERSION = '0.14';
+$Pegex::Cmd::Command::compile::VERSION = '0.15';
 Package->import( -command );
 use Mouse;
 extends 'Pegex::Cmd::Command';
@@ -92,43 +93,3 @@ sub execute {
 }
 
 1;
-
-=encoding utf8
-
-=head1 NAME
-
-Pegex::Cmd - Support module for the 'pegex' CLI command
-
-=head1 SYNOPSIS
-
-From the command line:
-
-    > pegex help
-
-    > pegex compile --to=yaml your-grammar.pgx
-    > pegex compile --to=json your-grammar.pgx
-    > pegex compile --to=perl your-grammar.pgx
-    > pegex compile --to=perl6 your-grammar.pgx
-    > pegex compile --to=python your-grammar.pgx
-
-=head1 DESCRIPTION
-
-The C<pegex> command line tool compiles a L<Pegex> grammar into a particular
-format and prints it to STDOUT. This tool just provides a simple way to invoke
-L<Pegex::Compiler> from the command line. See the L<Pegex> documentation for
-more information.
-
-=head1 AUTHOR
-
-Ingy döt Net <ingy@cpan.org>
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (c) 2011-2014. Ingy döt Net.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
-=cut
