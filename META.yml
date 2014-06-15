@@ -18,10 +18,14 @@ no_index:
     - t
     - xt
 requires:
+  App::Cmd: '0'
+  Module::Pluggable: '0'
+  Mouse: '0'
+  MouseX::App::Cmd: '0'
   Pegex: '0.30'
   perl: v5.8.1
 resources:
   bugtracker: https://github.com/ingydotnet/pegex-cmd-pm/issues
   homepage: https://github.com/ingydotnet/pegex-cmd-pm
   repository: https://github.com/ingydotnet/pegex-cmd-pm.git
-version: '0.15'
+version: '0.16'

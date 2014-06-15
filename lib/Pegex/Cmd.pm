@@ -1,8 +1,8 @@
 package Pegex::Cmd;
-$Pegex::Cmd::VERSION = '0.15';
+$Pegex::Cmd::VERSION = '0.16';
 #-----------------------------------------------------------------------------#
 package Pegex::Cmd::Command;
-$Pegex::Cmd::Command::VERSION = '0.15';
+$Pegex::Cmd::Command::VERSION = '0.16';
 use App::Cmd::Setup -command;
 use Mouse;
 extends 'MouseX::App::Cmd::Command';
@@ -21,7 +21,7 @@ use Module::Pluggable
 
 #-----------------------------------------------------------------------------#
 package Pegex::Cmd::Command::compile;
-$Pegex::Cmd::Command::compile::VERSION = '0.15';
+$Pegex::Cmd::Command::compile::VERSION = '0.16';
 Package->import( -command );
 use Mouse;
 extends 'Pegex::Cmd::Command';

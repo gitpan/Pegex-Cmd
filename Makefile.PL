@@ -22,9 +22,13 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Pegex::Cmd",
   "PREREQ_PM" => {
+    "App::Cmd" => 0,
+    "Module::Pluggable" => 0,
+    "Mouse" => 0,
+    "MouseX::App::Cmd" => 0,
     "Pegex" => "0.30"
   },
-  "VERSION" => "0.15",
+  "VERSION" => "0.16",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -32,6 +36,10 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "App::Cmd" => 0,
+  "Module::Pluggable" => 0,
+  "Mouse" => 0,
+  "MouseX::App::Cmd" => 0,
   "Pegex" => "0.30"
 );
 
