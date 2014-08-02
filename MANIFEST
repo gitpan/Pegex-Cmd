@@ -8,7 +8,10 @@ META.yml
 Makefile.PL
 README
 bin/pegex
+inc/Pegex.pm
 inc/Pegex/Base.pm
+inc/Pegex/Bootstrap.pm
+inc/Pegex/Compiler.pm
 inc/Pegex/Grammar.pm
 inc/Pegex/Input.pm
 inc/Pegex/Parser.pm
@@ -28,7 +31,6 @@ inc/TestML/Library/Standard.pm
 inc/TestML/Runtime.pm
 inc/TestML/Runtime/TAP.pm
 inc/TestML/Util.pm
-inc/Text/Diff.pm
 lib/Pegex/Cmd.pm
 lib/Pegex/Cmd.pod
 t/release-pod-syntax.t
