@@ -29,4 +29,4 @@ resources:
   bugtracker: https://github.com/ingydotnet/pegex-cmd-pm/issues
   homepage: https://github.com/ingydotnet/pegex-cmd-pm
   repository: https://github.com/ingydotnet/pegex-cmd-pm.git
-version: '0.21'
+version: '0.22'
