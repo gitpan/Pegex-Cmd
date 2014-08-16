@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     "MouseX::App::Cmd" => 0,
     "Pegex" => "0.30"
   },
-  "VERSION" => "0.22",
+  "VERSION" => "0.23",
   "test" => {
     "TESTS" => "t/*.t"
   }
