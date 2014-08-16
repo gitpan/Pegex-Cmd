@@ -33,7 +33,6 @@ inc/TestML/Runtime/TAP.pm
 inc/TestML/Util.pm
 lib/Pegex/Cmd.pm
 lib/Pegex/Cmd.pod
-t/000-compile-modules.t
 t/release-pod-syntax.t
 xt/foo.pgx
 xt/foo.pl.want
